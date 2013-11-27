@@ -6,14 +6,14 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var router = require('./router');
+var router = require('./routes');
 
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jshtml');
+app.engine('html', require('ejs').renderFile);
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
