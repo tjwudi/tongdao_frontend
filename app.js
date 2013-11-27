@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var router = require('./routes');
+var router = require('./router');
 var providersEntry = require('./providers/lib/entry');
 
 var app = express();
