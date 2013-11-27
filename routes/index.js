@@ -1,12 +1,9 @@
-router = module.exports;
+var controllers = require('../controllers');
+
+var router = module.exports;
 
 router.routeFor = function(app){
   // Application Routing
-  app.get('/', function(req, res){
-    if (req.session.user) {
-      res.end();
-    } else {
-      res.render('welcome.html');
-    }
-  });
+  app.get('/', controllers.main.index);
+  app.get('/welcome', controllers.main.welcome);
 }
