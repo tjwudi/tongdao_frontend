@@ -2,6 +2,7 @@
   "name": "tongdao_frontend",
   "dependencies": {
     "jquery": "1.10.2",
+    "requirejs": "*",
     "flight": "*"
   }
 }
