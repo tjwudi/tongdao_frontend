@@ -3,6 +3,10 @@
   "dependencies": {
     "jquery": "1.10.2",
     "requirejs": "*",
-    "flight": "*"
+    "flight": "*",
+    "underscore": "*",
+    "socket.io": "*",
+    "modernizr": "*",
+    "async": "*"
   }
 }

@@ -1,11 +1,9 @@
-$(document).ready(function () {
-  if (! window.td) {
-    window.td = {};
-  }
-  
-  /* 
-    连接WebSocket 并生成页面namespace入口点 
-  */
+/* 
+  连接WebSocket 并生成页面namespace入口点 
+*/
+
+define(function (require) {
+  var io = require('socket.io');
 
   // 解析当前Path，提取namespace
   var interpolatedNamespace = window.location.pathname.replace(/\/.*\..*$/, '');
@@ -15,6 +13,7 @@ $(document).ready(function () {
     interpolatedNamespace = interpolatedNamespace.replace(/\/$/, '');
   }
 
-  // 连接WebSocket
-  window.td.provider = io.connect('http://localhost' + interpolatedNamespace);
+  // 连接WebSocket，返回Socket Conection对象
+  return io.connect('http://localhost' + interpolatedNamespace);
 });
+
