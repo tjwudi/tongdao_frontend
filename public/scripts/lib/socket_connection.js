@@ -14,6 +14,6 @@ define(function (require) {
   }
 
   // 连接WebSocket，返回Socket Conection对象
-  return io.connect('http://localhost' + interpolatedNamespace);
+  return io.connect('http://www.tongdao.in' + interpolatedNamespace);
 });
 
