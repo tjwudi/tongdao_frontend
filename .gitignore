@@ -1,2 +1,3 @@
 /node_modules
 /public/scripts/components
+/public/scripts/lib/socket_connection.js
