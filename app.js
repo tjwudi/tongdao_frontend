@@ -6,8 +6,8 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var router = require('./router');
-var providersEntry = require('./providers/lib/entry');
+var router = require('./config/router');
+var socketProvidersEntry = require('./socket_providers/lib/entry');
 
 var app = express();
 
@@ -38,4 +38,4 @@ var server = http.createServer(app);
 server.listen(app.get('port'), function(){
   console.log('TongDao.in middle end server running on port: ' + app.get('port'));
 });
-providersEntry.init(server);
+socketProvidersEntry.init(server);
