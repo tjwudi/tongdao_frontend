@@ -24,7 +24,6 @@ app.use(express.session({
 	"secret": "612844acea900ee5855d9f399e07c0d9"
 }));
 app.use(app.router);
-app.use(require('less-middleware')({ src: __dirname + '/public' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
