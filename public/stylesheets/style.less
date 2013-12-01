@@ -1,26 +1,47 @@
 @import 'mixin.less';
 
-header {
-  position: relative;
+@theme_color: #4E86BE;
 
-  padding: 10px 0px;
+.welcome {
 
-  background-color: whitesmoke;
-  .drop-shadow;
+  header {
+    position: relative;
 
-  span {
-    float: right;
-    vertical-align: middle;
-    
-    height: 50px;
-    line-height: 50px;
+    padding: 10px 0px;
 
-    * {
-      margin: 0px 10px;
+    background-color: whitesmoke;
+    .drop-shadow;
+
+    span {
+      float: right;
+      vertical-align: middle;
+      
+      height: 50px;
+      line-height: 50px;
+
+      * {
+        margin: 0px 10px;
+      }
     }
   }
-}
 
-#intro {
-  padding: 24px 0px;
+  #intro {
+    padding: 24px 0px;
+  }
+
+  footer {
+    position: fixed;
+    text-align: center;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: @theme_color;
+
+    form {
+      padding: 12px;
+    }
+  }
+
 }
