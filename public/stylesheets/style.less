@@ -40,7 +40,28 @@
     background-color: @theme_color;
 
     form {
-      padding: 12px;
+      position: relative;
+
+      margin: 12px;
+
+      input {
+        width: 100%;
+        padding-right: 60px !important;
+      }
+
+      button {
+        // resets
+        background: none;
+        border: none;
+        outline: none;
+
+        position: absolute;
+
+        right: 12px;
+        top: 0;
+
+        font-size: 24px;
+      }
     }
   }
 
