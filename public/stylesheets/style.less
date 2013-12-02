@@ -6,9 +6,8 @@
 .welcome {
   header {
     position: relative;
-
+    
     padding: 10px 0px;
-    margin-bottom: 30px;
 
     background-color: whitesmoke;
     .drop-shadow;
@@ -63,5 +62,61 @@
     }
   }
 
+  .intro {
+    height: 400px;
+
+
+
+    .banner {
+      display: inline-block;
+
+      height: 300px;
+      width: 400px;
+
+      background: url(../images/banners/banner.png) no-repeat top left;
+    }
+
+    .banner-1, .banner-2, .banner-3 {
+      text-align: center;
+      padding-bottom: 30px;
+
+      p {
+        // reset
+        margin-bottom: 0;
+
+        position: relative;
+        top: -30px;
+
+        font-size: 24px;
+        line-height: 161%;
+        color: white;
+      }
+    }
+
+    .banner-1 {
+      background-color: #35485D;
+      .banner {
+        background-position: 0 -50px; width: 400px; height: 300px;
+      }
+    }
+
+    .banner-2 {
+      background-color: #9ACA40;
+      .banner {
+        background-position: 0 -500px; width: 400px; height: 300px;
+      }
+    }
+
+    .banner-3 {
+      // addtional padding for button bar
+      padding-bottom: 100px;
+
+      background-color: #5187BC;
+      .banner {
+        background-position: 0 -950px; width: 400px; height: 300px;
+      }
+    }
+    
+  }
 
 } // Welcome page style
