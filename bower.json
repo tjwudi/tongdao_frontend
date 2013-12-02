@@ -2,11 +2,10 @@
   "name": "tongdao_frontend",
   "dependencies": {
     "jquery": "1.10.2",
+    "jquery-placeholder": "*",
     "requirejs": "*",
     "flight": "*",
     "underscore": "*",
-    "socket.io": "*",
-    "modernizr": "*",
-    "async": "*"
+    "socket.io": "*"
   }
 }
