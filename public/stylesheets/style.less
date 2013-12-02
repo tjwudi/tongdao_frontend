@@ -65,46 +65,25 @@
   .intro {
 
     .banner {
-      display: inline-block;
+      padding-bottom: 60px;
+      width: 100%;
 
-      background: url(../images/banners/banner.png) no-repeat top left;
-    }
-
-    .banner-1, .banner-2, .banner-3 {
       text-align: center;
-      padding-bottom: 30px;
+
+      &.banner-1 {background-color: #35485D}
+      &.banner-2 {background-color: #9ACA40}
+      &.banner-3 {background-color: #5187BC}
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
 
       p {
-        // reset
-        margin-bottom: 0;
-
+        // banner text
         font-size: 24px;
         line-height: 161%;
         color: white;
-      }
-    }
-
-    .banner-1 {
-      background-color: #35485D;
-      .banner {
-        background-position: -60px -50px; width: 100%; max-width: 300px; height: 300px; 
-      }
-    }
-
-    .banner-2 {
-      background-color: #9ACA40;
-      .banner {
-        background-position: -60px -500px; width: 100%; max-width: 300px; height: 300px;
-      }
-    }
-
-    .banner-3 {
-      // addtional padding for button bar
-      padding-bottom: 100px;
-
-      background-color: #5187BC;
-      .banner {
-        background-position: -60px -950px; width: 100%; max-width: 300px; height: 300px;
       }
     }
     
