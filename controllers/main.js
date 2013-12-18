@@ -4,11 +4,11 @@ var proxies = require('../proxies');
 var async = require('async');
 
 main.index = function(req, res){
-  if (! req.session.user) {
-    return res.redirect('/welcome');
-  }
+  // if (! req.session.user) {
+  //   return res.redirect('/welcome');
+  // }
   
-  res.end();
+  res.render('index.html');
 }
 
 main.welcome = function(req, res){
