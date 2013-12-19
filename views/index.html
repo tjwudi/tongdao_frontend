@@ -12,224 +12,219 @@
   <!-- Loading Flat UI -->
   <link href="stylesheets/flat-ui.css" rel="stylesheet">
 
-  <!-- Loading Page UI -->
-  <link href="stylesheets/demo.css" rel="stylesheet">
-
   <link rel="shortcut icon" href="favicon.ico">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <![endif]-->
-    </head>
-    <body>
-      <header class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse-01"></button>
-            <a href="#" class="navbar-brand"><img class="logo" src="images/tongdao-white.png" alt=""></a>
-          </div>  
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body class="ns-common">
+  <header class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse-01"></button>
+        <a href="#" class="navbar-brand"><img class="logo" src="images/tongdao-white.png" alt=""></a>
+      </div>  
 
-          <div class="navbar-collapse collapse navbar-collapse-01">
-            <ul class="nav navbar-nav">
-              <!-- Menu items go here -->
-              <li class="active">
-                <a href="#">首页</a>
-              </li>
-              <li>
-                <a href="#">个人主页</a>
-              </li>
-              <li>
-                <a href="#">同道消息<span class="navbar-new">5</span></a>
-              </li>
-              <li>
-                <a href="#">最新活动<span class="navbar-new">2</span></a>
-              </li>
-            </ul>
+      <div class="navbar-collapse collapse navbar-collapse-01">
+        <ul class="nav navbar-nav">
+          <!-- Menu items go here -->
+          <li class="active">
+            <a href="#">首页</a>
+          </li>
+          <li>
+            <a href="#">个人主页</a>
+          </li>
+          <li>
+            <a href="#">同道消息<span class="navbar-new">5</span></a>
+          </li>
+          <li>
+            <a href="#">最新活动<span class="navbar-new">2</span></a>
+          </li>
+        </ul>
 
-            <form class="navbar-form navbar-right" action="#">
-              <div class="form-group">
-                <div class="input-group input-group-sm">
-                  <input class="form-control" id="navbarInput-02" type="search" placeholder="搜索 …">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>            
-                </div>
-              </div>                                    
-            </form>
-          </div>          
-        </div>
-
-      </header>
-
-      <div class="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-md-push-8 hidden-xs hidden-sm">
-              <div id="myCarousel" class="carousel slide" data-interval="false">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="images/carousel/image-01.jpg" alt="">
-                    <div class="carousel-caption">
-                      <h3>BroadLink DNA研究项目</h3>
-                      <p>BroadLink DNA 带您走入“人物互联”“万物互联”的智能生活时代。</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="images/carousel/image-02.jpg" alt="">
-                    <div class="carousel-caption">
-                      <h3>【创新杯】健康手环项目</h3>
-                      <p>iWan是全球首款采用多维度（心率检测/温度检测/动作检测）检测睡眠质量的智能手环，能准确地检测出用户的睡眠信息。</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="images/carousel/image-03.jpg" alt="">
-                    <div class="carousel-caption">
-                      <h3>Cuptime智能水杯项目</h3>
-                      <p>Cuptime是全球第一款真正的智能水杯，它能够精确地记录你的每一次饮水及饮水量，配合先进的水平衡算法。</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control fui-arrow-left" href="#myCarousel" data-slide="prev"></a>
-                <a class="right carousel-control fui-arrow-right" href="#myCarousel" data-slide="next"></a>
-              </div> <!-- Carousel -->
-
-              <div class="row">
-                <div class="col-xs-12">
-                  <ul class="nav nav-list">
-                    <li class="nav-header">推荐活动</li>
-                    <li class="divider"></li>
-                    <li><a href="#">Android程序设计大赛<span class="badge pull-right">1203参赛</span></a></li>
-                    <li><a href="#">贝恩杯咨询启航大赛<span class="badge pull-right">1503参赛</span></a></li>
-                    <li><a href="#">麦当劳比谁吃得多大赛<span class="badge pull-right">3803参赛</span></a></li>
-                    <li class="nav-header">热门项目</li>
-                    <li class="divider"></li>
-                    <li><a href="#">同道网<span class="badge pull-right">69赞</span></a></li>
-                    <li><a href="#">超级水晶杯<span class="badge pull-right">27赞</span></a></li>
-                    <li><a href="#">WeCampus<span class="badge pull-right">69赞</span></a></li>
-                    <li class="nav-header">我参加讨论的项目</li>
-                    <li class="divider"></li>
-                    <li><a href="#">同济大学有节操<span class="badge pull-right">42赞</span></a></li>
-                    <li><a href="#">复旦大学掉节操<span class="badge pull-right">55赞</span></a></li>
-                    <li><a href="#">清华大学是节操<span class="badge pull-right">99赞</span></a></li>
-                    <li><a href="#">上海交通哈哈哈<span class="badge pull-right">172赞</span></a></li>
-                  </ul> 
-                </div>
-              </div> <!-- side nav -->
+        <form class="navbar-form navbar-right" action="#">
+          <div class="form-group">
+            <div class="input-group input-group-sm">
+              <input class="form-control" id="navbarInput-02" type="search" placeholder="搜索 …">
+              <span class="input-group-btn">
+                <button type="submit" class="btn"><span class="fui-search"></span></button>
+              </span>            
             </div>
+          </div>                                    
+        </form>
+      </div>          
+    </div>
 
-            <div class="col-md-8 col-md-pull-4">
-              <article class="public-activity row">
-                <section class="col-xs-2 avatar">
-                  <img src="images/avatars/1.jpeg" alt="">
-                </section>
-                <section class="col-xs-10 text row pan">
-                  <div class="pa-top-text col-xs-12"><a href="#">胡运州大帅哥</a>&nbsp;赞了项目：<a href="#">【攒学分】“妈妈别打我”的营销模式研究</a></div>
-                  <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
-                </section> 
-              </article> 
-              <hr class="row"> <!-- public activity item -->
-              <article class="public-activity row">
-                <section class="col-xs-2 avatar">
-                  <img src="images/avatars/2.jpeg" alt="">
-                </section>
-                <section class="col-xs-10 text row pan">
-                  <div class="pa-top-text col-xs-12"><a href="#">王天雨拔萝卜</a>&nbsp;参加了项目：<a href="#">流体动力学的历史论文小组</a></div>
-                  <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
-                </section> 
-              </article> 
-              <hr class="row"> <!-- public activity item -->
-              <article class="public-activity row">
-                <section class="col-xs-2 avatar">
-                  <img src="images/avatars/3.jpeg" alt="">
-                </section>
-                <section class="col-xs-10 text row pan">
-                  <div class="pa-top-text col-xs-12"><a href="#">谷欣干苦力</a>&nbsp;参加了比赛：<a href="#">Android挑战赛</a></div>
-                  <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
-                </section> 
-              </article> 
-              <hr class="row"> <!-- public activity item -->
-              <article class="public-activity row">
-                <section class="col-xs-2 avatar">
-                  <img src="images/avatars/4.jpeg" alt="">
-                </section>
-                <section class="col-xs-10 text row pan">
-                  <div class="pa-top-text col-xs-12"><a href="#">徐秋韵把数据库实验报告扔网盘了</a>&nbsp;获得认证：<a href="#">神奇5姐</a></div>
-                  <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
-                </section> 
-              </article> 
+  </header>
 
-              <div class="pa-pagination row">
-                <div class="col-xs-12">
-                  <ul class="pagination">
-                    <li class="previous disabled">
-                      <a href="#">Previous</a>
-                    </li>
-                    <li class="active disabled"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li class="next">
-                      <a href="#">Newer</a>
-                    </li>
-                  </ul>                  
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-push-8 hidden-xs hidden-sm">
+          <div id="myCarousel" class="carousel slide" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/carousel/image-01.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>BroadLink DNA研究项目</h3>
+                  <p>BroadLink DNA 带您走入“人物互联”“万物互联”的智能生活时代。</p>
                 </div>
               </div>
-            </div> <!-- public activities pagination -->
+              <div class="item">
+                <img src="images/carousel/image-02.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>【创新杯】健康手环项目</h3>
+                  <p>iWan是全球首款采用多维度（心率检测/温度检测/动作检测）检测睡眠质量的智能手环，能准确地检测出用户的睡眠信息。</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/carousel/image-03.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>Cuptime智能水杯项目</h3>
+                  <p>Cuptime是全球第一款真正的智能水杯，它能够精确地记录你的每一次饮水及饮水量，配合先进的水平衡算法。</p>
+                </div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control fui-arrow-left" href="#myCarousel" data-slide="prev"></a>
+            <a class="right carousel-control fui-arrow-right" href="#myCarousel" data-slide="next"></a>
+          </div> <!-- Carousel -->
 
-          </div> <!-- public activities -->
-
-        </div>
-      </div>
-
-      <footer class="bottom-menu bottom-menu-default">
-        <div class="container">
           <div class="row">
-            <div class="col-md-2 navbar-brand">
-              <a href="#"><img class="logo" src="images/tongdao-blue.png" alt=""></a>
+            <div class="col-xs-12">
+              <ul class="nav nav-list">
+                <li class="nav-header">推荐活动</li>
+                <li class="divider"></li>
+                <li><a href="#">Android程序设计大赛<span class="badge pull-right">1203参赛</span></a></li>
+                <li><a href="#">贝恩杯咨询启航大赛<span class="badge pull-right">1503参赛</span></a></li>
+                <li><a href="#">麦当劳比谁吃得多大赛<span class="badge pull-right">3803参赛</span></a></li>
+                <li class="nav-header">热门项目</li>
+                <li class="divider"></li>
+                <li><a href="#">同道网<span class="badge pull-right">69赞</span></a></li>
+                <li><a href="#">超级水晶杯<span class="badge pull-right">27赞</span></a></li>
+                <li><a href="#">WeCampus<span class="badge pull-right">69赞</span></a></li>
+                <li class="nav-header">最新的</li>
+                <li class="divider"></li>
+                <li><a href="#">同济大学有节操<span class="badge pull-right">42赞</span></a></li>
+                <li><a href="#">复旦大学掉节操<span class="badge pull-right">55赞</span></a></li>
+                <li><a href="#">清华大学是节操<span class="badge pull-right">99赞</span></a></li>
+                <li><a href="#">上海交通哈哈哈<span class="badge pull-right">172赞</span></a></li>
+              </ul> 
             </div>
-
-            <div class="col-md-8">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">联系我们</a></li>
-                <li><a href="#fakelink">加入我们</a></li>
-                <li class="active"><a href="#fakelink">合作伙伴</a></li>
-                <li><a href="#fakelink">用户条款</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-2">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink" class="fui-pinterest"></a></li>
-                <li><a href="#fakelink" class="fui-facebook"></a></li>
-                <li><a href="#fakelink" class="fui-twitter"></a></li>
-              </ul>
-            </div>
-          </div> <!-- footer message row -->
-          <div class="row icp-text">
-            <span>&copy;2013-2014 同道网，沪ICP备13041259号</span>
-          </div> <!-- ICP Code -->
+          </div> <!-- side nav -->
         </div>
-      </footer>
 
-      <!-- Load JS here for greater good =============================-->
-      <script src="scripts/jquery-1.8.3.min.js"></script>
-      <script src="scripts/jquery-ui-1.10.3.custom.min.js"></script>
-      <script src="scripts/jquery.ui.touch-punch.min.js"></script>
-      <script src="scripts/bootstrap.min.js"></script>
-      <script src="scripts/bootstrap-select.js"></script>
-      <script src="scripts/bootstrap-switch.js"></script>
-      <script src="scripts/flatui-checkbox.js"></script>
-      <script src="scripts/flatui-radio.js"></script>
-      <script src="scripts/jquery.tagsinput.js"></script>
-      <script src="scripts/jquery.placeholder.js"></script>
-    </body>
-    </html>
+        <div class="col-md-8 col-md-pull-4">
+          <article class="public-activity row">
+            <section class="col-xs-2 avatar">
+              <img src="images/avatars/1.jpeg" alt="">
+            </section>
+            <section class="col-xs-10 text row pan">
+              <div class="top-text col-xs-12"><a href="#">胡运州大帅哥</a>&nbsp;赞了项目：<a href="#">【攒学分】“妈妈别打我”的营销模式研究</a></div>
+              <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
+            </section> 
+          </article> 
+          <hr class="row"> <!-- public activity item -->
+          <article class="public-activity row">
+            <section class="col-xs-2 avatar">
+              <img src="images/avatars/2.jpeg" alt="">
+            </section>
+            <section class="col-xs-10 text row pan">
+              <div class="top-text col-xs-12"><a href="#">王天雨拔萝卜</a>&nbsp;参加了项目：<a href="#">流体动力学的历史论文小组</a></div>
+              <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
+            </section> 
+          </article> 
+          <hr class="row"> <!-- public activity item -->
+          <article class="public-activity row">
+            <section class="col-xs-2 avatar">
+              <img src="images/avatars/3.jpeg" alt="">
+            </section>
+            <section class="col-xs-10 text row pan">
+              <div class="top-text col-xs-12"><a href="#">谷欣干苦力</a>&nbsp;参加了比赛：<a href="#">Android挑战赛</a></div>
+              <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
+            </section> 
+          </article> 
+          <hr class="row"> <!-- public activity item -->
+          <article class="public-activity row">
+            <section class="col-xs-2 avatar">
+              <img src="images/avatars/4.jpeg" alt="">
+            </section>
+            <section class="col-xs-10 text row pan">
+              <div class="top-text col-xs-12"><a href="#">徐秋韵把数据库实验报告扔网盘了</a>&nbsp;获得认证：<a href="#">神奇5姐</a></div>
+              <div class="col-xs-12"><p>lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalchlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalch</p></div>
+            </section> 
+          </article> 
+
+          <div class="public-activity-pagination row">
+            <div class="col-xs-12">
+              <ul class="pagination">
+                <li class="previous disabled">
+                  <a href="#">Previous</a>
+                </li>
+                <li class="active disabled"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="next">
+                  <a href="#">Newer</a>
+                </li>
+              </ul>                  
+            </div>
+          </div>
+        </div> <!-- public activities pagination -->
+
+      </div> <!-- public activities -->
+
+    </div>
+  </div>
+
+  <footer class="bottom-menu bottom-menu-default">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 navbar-brand">
+          <a href="#"><img class="logo" src="images/tongdao-blue.png" alt=""></a>
+        </div>
+
+        <div class="col-md-8">
+          <ul class="bottom-links">
+            <li><a href="#fakelink">联系我们</a></li>
+            <li><a href="#fakelink">加入我们</a></li>
+            <li class="active"><a href="#fakelink">合作伙伴</a></li>
+            <li><a href="#fakelink">用户条款</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <ul class="bottom-icons">
+            <li><a href="#fakelink" class="fui-pinterest"></a></li>
+            <li><a href="#fakelink" class="fui-facebook"></a></li>
+            <li><a href="#fakelink" class="fui-twitter"></a></li>
+          </ul>
+        </div>
+      </div> <!-- footer message row -->
+      <div class="row icp-text">
+        <span>&copy;2013-2014 同道网，沪ICP备13041259号</span>
+      </div> <!-- ICP Code -->
+    </div>
+  </footer>
+
+  <!-- Load JS here for greater good =============================-->
+  <script src="scripts/jquery-1.8.3.min.js"></script>
+  <script src="scripts/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/bootstrap-select.js"></script>
+  <script src="scripts/bootstrap-switch.js"></script>
+  <script src="scripts/flatui-checkbox.js"></script>
+  <script src="scripts/flatui-radio.js"></script>
+  <script src="scripts/jquery.tagsinput.js"></script>
+  <script src="scripts/jquery.placeholder.js"></script>
+</body>
+</html>

@@ -1,16 +1,14 @@
-@import 'mixin.less';
-
 @theme_color: #4E86BE;
 
 /* Styles for welcome page */
-.welcome {
+.ns-welcome {
   header {
     position: relative;
     
     padding: 10px 0px;
 
     background-color: whitesmoke;
-    .drop-shadow;
+    .box-shadow(1px 0px 2px black);
 
     span {
       float: right;
@@ -44,6 +42,7 @@
       input {
         width: 100%;
         padding-right: 60px !important;
+        background-color: #35485D;
       }
 
       button {
@@ -55,7 +54,7 @@
         position: absolute;
 
         right: 12px;
-        top: 0;
+        top: 4px;
 
         font-size: 24px;
       }

@@ -1,20 +1,26 @@
-<!doctype html>
-<html lang='zh-CN'>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta charset="utf-8">
+  <title>同道网 - 最专业的大学生项目社交平台 - 首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="stylesheets/uikit.min.css">
-  <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- Loading Bootstrap -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  
 
-  <script src="//cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <!-- Loading Flat UI -->
+  <link href="stylesheets/flat-ui.css" rel="stylesheet">
 
-  <title>同道 - 专业的大学生项目社交平台</title>
-</head>  
-<body class="welcome">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body class="ns-welcome">
 
 <header>
-<div class="uk-container uk-container-center">
+<div class="container">
   <img id="logo" src="images/tongdao.png" alt="">
   <span><a href="#">用户登陆</a></span>
 </div>
@@ -23,10 +29,10 @@
 
 <article class="intro">
   <section class="banner banner-1">
-    <div class="uk-container uk-container-center">
-      <div class="uk-grid">
-        <div class="uk-width-1-1"><img src="images/banners/banner1.png" alt=""></div>
-        <div class="uk-width-1-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1-1"><img src="images/banners/banner1.png" alt=""></div>
+        <div class="col-xs-1-1">
           <p>找到最神的队友，一起完成富有挑战的项目</p>
           <p>已有<%= count_of_projects.count %>个项目在同道上萌芽</p>     
         </div>            
@@ -34,10 +40,10 @@
     </div>   
   </section>
   <section class="banner banner-2">
-    <div class="uk-container uk-container-center">
-      <div class="uk-grid">
-        <div class="uk-width-1-1"><img src="images/banners/banner2.png" alt=""></div>
-        <div class="uk-width-1-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1-1"><img src="images/banners/banner2.png" alt=""></div>
+        <div class="col-xs-1-1">
           <p>和所有同道中人一同思考，为你的项目出谋划策</p>
           <p>已有<%= count_of_users.count %>个同道中人在同道上等你</p>    
         </div>            
@@ -45,10 +51,10 @@
     </div>   
   </section>
   <section class="banner banner-3" style="padding-bottom: 120px">
-    <div class="uk-container uk-container-center">
-      <div class="uk-grid">
-        <div class="uk-width-1-1"><img src="images/banners/banner3.png" alt=""></div>
-        <div class="uk-width-1-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1-1"><img src="images/banners/banner3.png" alt=""></div>
+        <div class="col-xs-1-1">
           <p>参加缤纷校园学生项目比赛，提升自我，通向未来</p>
           <p>我们是专业的大学生项目社交平台</p>
           <p>想加入同道？非常简单！</p>  
@@ -60,22 +66,32 @@
 
 
 <footer>
-  <div class="uk-width-medium-4-10 uk-push-3-10">
-    <form action="#" class="uk-form">
-      <input type="text" class="uk-form-large" id="email" name="email" placeholder="输入你的邮箱，开启同道之旅吧！">
-      <button class="uk-icon-button uk-icon-ok"></button>
-    </form>
-  </div> <!-- form wrapper -->
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <form action="#" method="POST">
+        <input type="text" placeholder="输入你的邮箱，开启同道之旅吧！" class="form-control input-hg" id="email" name="email">
+        <button class="fui-check"></button>
+      </form>
+    </div> <!-- form wrapper -->
+  </div>
 
-  <div>
-    <p class="uk-text-muted uk-text-small">&copy;2013-2014 同道网，沪ICP备13041259号</p>
+
+  <div class="row">
+    <p>&copy;2013-2014 同道网，沪ICP备13041259号</p>
   </div> <!-- copyright && icp information -->
 </footer>
 
 
-<script src="//cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
-<script src="scripts/lib/uikit.min.js"></script>
-<script src="scripts/components/jquery-placeholder/jquery.placeholder.min.js"></script>
-<script data-main="scripts/pages/welcome.js" src="scripts/components/requirejs/require.js"></script>
+  <!-- Load JS here for greater good =============================-->
+  <script src="scripts/jquery-1.8.3.min.js"></script>
+  <script src="scripts/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/bootstrap-select.js"></script>
+  <script src="scripts/bootstrap-switch.js"></script>
+  <script src="scripts/flatui-checkbox.js"></script>
+  <script src="scripts/flatui-radio.js"></script>
+  <script src="scripts/jquery.tagsinput.js"></script>
+  <script src="scripts/jquery.placeholder.js"></script>
 </body>
 </html>
