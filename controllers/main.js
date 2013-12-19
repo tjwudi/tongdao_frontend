@@ -4,7 +4,7 @@ var proxies = require('../proxies');
 var async = require('async');
 
 mainRouter.index = function(req, res) {
-  if (! req.session.user) {
+  if (! req.session.token) {
     return res.redirect('/welcome');
   }
   
@@ -12,7 +12,7 @@ mainRouter.index = function(req, res) {
 }
 
 mainRouter.welcome = function(req, res){
-  if (!! req.session.user) {
+  if (!! req.session.token) {
     return res.redirect('/');
   }
 
