@@ -12,12 +12,17 @@ userRouter.sign_in_verify = function(req, res) {
     return res.redirect('/');
   }
 
-  proxies.user.createSession(req, res, function(err, data){
-    if (!! data.err_code && data.err_code == 'LOGIN_FAILED') {
-      return res.redirect('/sign_in?retry=true');
-    }
+  async.parallel([
+    proxies.user.createSession.bind({form_data: req.body})
+    ], 
+    function(err, results){
+      var data = results[0];
+      if (!! data.err_code && data.err_code == 'LOGIN_FAILED') {
+        return res.redirect('/sign_in?retry=true');
+      }
 
-    req.session.token = data.token;
-    res.redirect('/');
+      req.session.token = data.token;
+      req.session.uid = data.id;
+      res.redirect('/');
   });
 }

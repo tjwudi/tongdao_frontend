@@ -19,8 +19,9 @@ mainRouter.welcome = function(req, res){
   async.parallel([
     proxies.project.getProjectsCount,
     proxies.user.getUsersCount
-  ],
+  ], 
   function (err, results) {
+    console.log(arguments);
     data = {
       'count_of_projects': results[0],
       'count_of_users': results[1]

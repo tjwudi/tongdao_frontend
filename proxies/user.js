@@ -14,10 +14,10 @@ userProxy.getUsersCount = function (callback) {
   });
 }
 
-userProxy.createSession = function (req, res, callback) {
+userProxy.createSession = function (callback) {
   config = {
     'method': 'POST',
-    'form'  : req.body,
+    'form'  : this.form_data,
     'url'   : host + '/sessions'
   };
 
