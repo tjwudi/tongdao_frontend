@@ -1,4 +1,4 @@
 /node_modules
 /public/scripts/components
 /public/scripts/lib/socket_connection.js
-codekit-config.json
+/public/codekit-config.json

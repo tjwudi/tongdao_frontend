@@ -18,7 +18,7 @@ userRouter.sign_in_verify = function(req, res) {
     function(err, results){
       var data = results[0];
       if (!! data.err_code && data.err_code == 'LOGIN_FAILED') {
-        return res.redirect('/sign_in?retry=true');
+        return res.redirect('/sign_in?err_code=LOGIN_FAILED');
       }
 
       req.session.token = data.token;
