@@ -3,20 +3,12 @@ var mainRouter = module.exports;
 var proxies = require('../proxies');
 var async = require('async');
 
-mainRouter.index = function(req, res) {
-  if (! req.session.token) {
-    return res.redirect('/welcome');
-  }
-  
-  res.render('index.html');
+mainRouter.publicActivities = function(req, res, next) {
+  res.render('users/public_activities.html');
 }
 
-mainRouter.welcome = function(req, res){
-  if (!! req.session.token) {
-    return res.redirect('/');
-  }
-
-  async.parallel([
+mainRouter.welcome = function(req, res, next){
+  async.parallel([  // 获取欢迎页需要的一些信息
     proxies.project.getProjectsCount,
     proxies.user.getUsersCount
   ], 

@@ -1,0 +1,21 @@
+<%- include ../partials/fw_header.html %>
+<div class="container">
+  <div class="row">
+    <div class="panel giant col-md-8 col-md-push-2">
+        <div class="row title-bg"><span class="fui-user"></span></div>
+        <div class="row">
+          <div action="sign_in" class="col-md-8 col-md-push-2" method="POST">
+            非常感谢您加入同道，请登陆您刚才提供的邮箱收取激活邮件，并完成后续注册步骤。
+          </div>
+        </div>
+        <div class="row">
+          <form action="sign_in" class="col-md-8 col-md-push-2" method="POST">
+            <div class="form-group">
+              <button type="submit" class="btn btn-lg btn-block btn-info disabled">重发激活邮件(60秒)</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+<%- include ../partials/fw_footer.html %>

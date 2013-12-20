@@ -2,6 +2,7 @@ var userProxy = module.exports;
 
 var request = require('request');
 var host = require('../config/settings').apiHost;
+var responseUtil = require('../utils/response-util');
 
 userProxy.getUsersCount = function (callback) {
   config = {
@@ -10,7 +11,7 @@ userProxy.getUsersCount = function (callback) {
   };
 
   request(config, function (err, res, body) {
-    callback(err, JSON.parse(body));
+    callback(err, responseUtil.bindHTTPStatusCode(res, body));
   });
 }
 
@@ -22,6 +23,6 @@ userProxy.createSession = function (callback) {
   };
 
   request(config, function(err, res, body) {
-    callback(err, JSON.parse(body));
+    callback(err, responseUtil.bindHTTPStatusCode(res, body));
   });
 }
